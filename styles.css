@@ -1,0 +1,382 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* HTML STYLES */
+html{
+    background-color: rgba(122, 191, 191, .5);
+}
+
+body{
+    margin: 0 auto;
+    min-width: 414px;
+    max-width: 1280px;
+    background-color: white;
+    line-height: 1;
+}
+
+main{
+
+}
+
+/* HEADER & NAV STYLES */
+
+header{
+    height: 120px; 
+    width: 1280px;
+    background-color: white;
+}
+
+
+
+
+
+#navbar{
+    overflow: visible;
+    position: absolute;
+    top: 15px;
+    margin-left: 145px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    padding-bottom: 100px;
+}
+
+nav ul{
+    color: white;
+    text-align: center;
+
+}
+
+nav a{
+    font-family: 'Bebas Neue', cursive;
+    font-size: 20px;
+    text-decoration: none;
+    color: #EB5428;
+}
+
+nav span{
+    font-size: 20px;
+}
+
+.navimg{
+    width: 80px;
+    position: relative;
+    margin: auto;
+    height: 80px;
+
+}
+
+.icon-tabler-tools-kitchen{
+    padding-top: 25px;
+    padding-left: 30px;
+    fill: #EB5428;
+    float: left;
+}
+
+.icontools{
+    height: 120px; 
+    width: 130px;
+    background-color: #EB5428;
+}
+
+.icon-tabler-user-circle{
+    stroke: #EB5428;
+    position: ;
+}
+
+
+main{
+    background-color: #ffffff;
+    max-height: 100%;
+}
+
+/* SEARCH BAR */
+
+#form{
+    color: #ffffff;
+    padding-top: 30px;
+    margin-left: 500px;
+}
+
+button > svg{
+    stroke:#EB5428;
+}
+
+input{
+	padding: 10px;
+    padding-bottom: 10px;
+    width: 250px;
+	font-size: 16px;
+	margin-bottom: 24px;
+	border-radius: 4px;
+    border-color:#EB5428;
+	inset: 0px;
+
+}
+
+::placeholder {
+    opacity: 1;
+  }
+
+
+button{
+
+}
+
+/* MENU */
+menu li{
+    font-size: 20px;
+}
+
+#social li{
+    font-size: 20px;
+}
+
+/* TOP CONTAINER */
+#grid-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding-top: 50px;
+    padding-bottom: 100px;
+    
+}
+
+.grid-child-element {
+    width: 50%;
+    padding: 10px;
+}  
+
+.menu-side{
+    border: 3px solid #fff;
+    border-color: #EB5428;
+
+    
+}
+
+article{
+
+    text-align:center
+    
+}
+
+.headerimg{
+    width: 380px;
+    height:580px;
+    top:-50px;
+}
+
+/* DETAILS SECTION */
+
+#details_container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr ;
+    padding-bottom: 50px;
+    margin-top: 20px;
+    justify-content: center;
+    color: #F2F2F2;
+    background-color: #0D0D0D;
+}
+
+#details_container > div{
+
+}
+
+main > h2{
+    text-align:center;
+    color: #F2F2F2;
+    background-color: #0D0D0D;
+
+}
+
+
+/* INGREDIENTS AND DIRECTIONS SECTION */
+
+#ingri_direct_container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-bottom: 100px;
+    margin-top: 20px;
+    justify-content: center;
+    color: black;
+    background-color: white;
+}
+
+.ingredients_container{
+    margin-left: 100px; 
+}
+
+.ingredients_container ~ h2{
+    padding-top: 20px;
+}
+
+.ingredients_container > ul{
+    list-style-type: square;
+
+}
+
+.directions_container > ol{
+    margin-right: 150px;
+
+}
+
+/* SIDES CONTAINER */
+
+#sides_container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding-bottom: 100px;
+    margin-top: 20px;
+    justify-content: center;
+    color: black;
+    background-color: #7ABFBF;
+}
+
+#sides_container > section{
+    margin-left: 40px;
+    margin-top: 40px;
+}
+
+.sides > h2{
+    text-align:center;
+    color: #0D0D0D;
+    background-color: #7ABFBF;
+}
+
+/* FOOTER STYLES  */
+#social{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    text-decoration: none;
+    margin-left: 500px;
+    margin-top: 10px;
+}
+
+.right_footer{
+    
+} 
+
+footer{
+    font-size: 20px;
+}
+footer a{
+    float: right;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    
+}
+
+.footer_img{
+    width: 180px;
+    height: 180px;
+    top: -10px;
+}
+
+.left_footer{
+    margin-left: 50px;
+    margin-right: 0px;
+    top: 10px;
+    margin-bottom: 50px;
+
+}
+
+.footer_p{
+    font-family: 'Bebas Neue', cursive;
+    margin-left: 180px;
+
+}
+
+
+
+
+/* CONNECT FONTS TO THE CSS */
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400;700&display=swap');
+
+/* TEXT STYLES */
+h1{
+    font-family: 'Bebas Neue', cursive;
+    text-align: center;
+    font-size: 40px;
+}
+
+h2{
+    font-family: 'Bebas Neue', cursive;
+    font-size: 30px;
+}
+
+h3{
+    font-family: 'Bebas Neue', cursive;
+    font-size: 25px;
+}
+
+p{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+}
+
+dd{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+} 
+
+dt{
+    font-size: 16px;
+}
+
+
+
+
+
+
+
+
+
+
